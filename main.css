@@ -673,6 +673,51 @@ textarea {
     padding: 20px;
 }
 
+#accordionExample>div:nth-child(4) .accordion-body {
+    padding: 20px;
+}
+
+#accordionExample>div:nth-child(5) .accordion-body h3 {
+    margin-bottom: 30px;
+}
+
+#accordionExample>div:nth-child(5) .accordion-body ul {
+    margin-bottom: 30px;
+}
+
+#accordionExample>div:nth-child(4) .accordion-body .table-container {
+    background-color: #dfb9a566;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+#accordionExample>div:nth-child(4) .accordion-body table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+#accordionExample>div:nth-child(4) .accordion-body th,
+.accordion-body td {
+    border: 1px solid #78310b66;
+    padding: 10px;
+    text-align: left;
+}
+
+#accordionExample>div:nth-child(4) .accordion-body th {
+    background-color: #e6b69c;
+}
+
+@media screen and (max-width: 600px) {
+    #accordionExample>div:nth-child(4) .accordion-body .table-container h2 {
+        font-size: 20px;
+    }
+
+
+}
+
 .team .team-heading {
     font-size: 24px;
     font-weight: 700;
@@ -846,13 +891,17 @@ textarea {
 }
 
 .client img {
-    width: 44%;
+    width: 38%;
     transition: transform 1s;
     cursor: pointer;
 }
 
 .client img:hover {
     transform: translateZ(20px);
+}
+
+.client img.Figma {
+    transform: translateZ(-3px);
 }
 
 .client .slide-container {
@@ -872,151 +921,21 @@ textarea {
 }
 
 .client .slide-image {
-    height: 134px;
-    width: 282px;
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 2px;
     perspective: 100px;
+    max-width: 282px;
+    max-height: 134px;
 }
 
-.contact .contact-title .contact-heading {
-    font-size: 24px;
-    font-weight: 700;
-    padding-bottom: 0;
-    line-height: 1px;
-    margin-bottom: 15px;
-    color: #c2b7b1;
-}
-
-.contact .contact-title .contact-sub-heading {
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    position: relative;
-    font-size: 32px;
-    font-weight: 700;
-    color: #4e4039;
-    padding-left: 4%;
-}
-
-.contact .contact-title .contact-sub-heading:after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 60px;
-    height: 2px;
-    background: #eb5d1e;
-    bottom: 0;
-    left: calc(50% - 30px);
-}
-
-.contact .info {
-    border-bottom: 3px solid #eb5d1e;
-    border-top: 3px solid #eb5d1e;
-    padding: 30px;
-    background: #fff;
-    width: 100%;
-    box-shadow: 0 0 24px 0 rgba(10, 10, 10, 0.2);
-}
-
-.contact .contact-icon {
-    font-size: 20px;
-    color: #eb5d1e;
-    float: left;
-    width: 44px;
-    height: 44px;
-    background: #fdf1ec;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
-}
-
-@media (max-width: 786px) {
-    .contact .contact-icon {
-        margin-right: 18px;
-    }
-}
-
-.contact h4 {
-    padding-left: 15%;
-}
-
-.contact p {
-    padding-left: 15%;
-}
-
-.contact form {
-    border-bottom: 3px solid #eb5d1e;
-    border-top: 3px solid #eb5d1e;
-    padding: 30px;
-    background: #fff;
-    width: 100%;
-    box-shadow: 0 0 24px 0 rgba(10, 10, 10, 0.2);
-}
 
 #footer {
     color: #212529;
     font-size: 14px;
 }
 
-#footer .footer-newsletter {
-    padding: 50px 0;
-    background: #fef8f5;
-    text-align: center;
-    font-size: 15px;
-}
-
-#footer .footer-newsletter h4 {
-    font-size: 24px;
-    margin: 0 0 20px 0;
-    padding: 0;
-    line-height: 1;
-    font-weight: 600;
-    color: #4e4039;
-}
-
-#footer .footer-newsletter p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-#footer .footer-newsletter form {
-    margin-top: 30px;
-    background: #fff;
-    padding: 6px 10px;
-    position: relative;
-    border-radius: 4px;
-    box-shadow: 0px 2px 15px rgba(10, 10, 10, 0.2);
-    text-align: left;
-}
-
-#footer .footer-newsletter form input[type=email] {
-    border: 0;
-    padding: 4px 4px;
-    width: calc(100% - 100px);
-}
-
-#footer .footer-newsletter form input[type=submit] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    border: 0;
-    background: none;
-    font-size: 16px;
-    padding: 0 20px;
-    background: #eb5d1e;
-    color: #fff;
-    transition: 0.3s;
-    border-radius: 4px;
-    box-shadow: 0px 2px 15px rgba(10, 10, 10, 0.2);
-}
-
-#footer .footer-newsletter form input[type=submit]:hover {
-    background: #d35219;
-}
 
 #footer .footer-top {
     padding: 60px 0 30px 0;
