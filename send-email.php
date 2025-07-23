@@ -22,6 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <title>Feedback Form Submission</title>
     </head>
     <body>
+    
         <h2>Feedback Details</h2>
         <p><strong>Status of the Synopsis:</strong> $status</p>
         <p><strong>Any Comments:</strong> $comments</p>
