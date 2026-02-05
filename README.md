@@ -1,1 +1,1 @@
-MCA project for college.
+Show casing all details as a website, for MCA. 
